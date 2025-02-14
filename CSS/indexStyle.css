@@ -1,0 +1,237 @@
+/* Colorpallete */
+:root {
+    --darkblue: #023047;
+    --blue: #219ebc;
+    --lightblue: #8ecae6;
+    --lightyellow: #ffb703;
+    --orange: #fb8500;
+}
+
+
+#header {
+    background-image: url(../img/background_header4.JPG);
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    /* border-bottom: 20px dotted var(--lightblue); */
+
+}
+
+/* #div_header {
+    background: rgba(255, 251, 251, 0.3);
+    height: 350px;
+} */
+
+/* Positioning company logos */
+
+#img_logo_left {
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#img_logo_right {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#img_logo_left:hover, #img_logo_right:hover {
+    transform: scale(1.1);
+}
+
+/* CSS navbar */
+
+#header_top {
+    border-radius: 30px;
+    position: relative;
+    top: 20px;
+    background: rgba(255, 251, 251, 0.3);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar_link {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    text-shadow: 
+        0.5px 0.5px 0px #444444, 
+        -0.5px -0.5px 0px #444444,
+        0.5px -0.5px 0px #444444, 
+        -0.5px 0.5px 0px #444444; 
+    margin: 0px 15px;
+}
+
+.navbar_link:hover {
+    color: var(--orange);
+}
+
+/* Company name over background */
+
+#container_name {
+    position: relative;
+    top: 40px;
+    left: -100px;
+    width: 500px;
+}
+
+#company_name, #company_slogan {
+    color: white;
+    font-weight: 700;
+    width: 500px;
+}
+
+#company_slogan {
+    /* color: var(--orange); */
+    margin-top: 40px;
+    text-shadow: 
+    0.5px 0.5px 0px #444444, 
+    -0.5px -0.5px 0px #444444,
+    0.5px -0.5px 0px #444444, 
+    -0.5px 0.5px 0px #444444;
+}
+
+/* section products */
+
+#section_products {
+    border-radius: 30px;
+    position: relative;
+    top: -25px;
+    background-color: var(--lightblue);
+    padding-bottom: 35px;
+}
+
+.card_product {
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 35px;
+}
+
+.card_txt {
+    color: var(--orange);
+    font-weight: 900;
+}
+
+.card_p {
+    color: var(--darkblue);
+}
+
+/* section carousel */
+
+#section_carousel {
+    margin-bottom: 35px;
+}
+
+.carousel_img {
+    border-radius: 5px;
+}
+
+/* section testimonials */
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+figure.snip1139 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 0 5px rgb(211, 209, 209);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+figure:hover {
+  transform: scale(1.05);
+}
+
+figure.snip1139 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+figure.snip1139 img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+figure.snip1139 blockquote {
+  position: relative;
+  background-color: #ffffff;
+  padding: 25px 50px 25px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+}
+figure.snip1139 blockquote:before,
+figure.snip1139 blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.snip1139 blockquote:before {
+  top: 25px;
+  left: 20px;
+}
+figure.snip1139 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
+}
+figure.snip1139 .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #ffffff;
+  margin: 0;
+  position: absolute;
+}
+figure.snip1139 .author {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 25px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+}
+figure.snip1139 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 800;
+}
+figure.snip1139 .author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 5px;
+}
+
+#testimonials_clients {
+  background-color: var(--darkblue);
+  border-top: 20px double white;
+  border-bottom: 20px double white;
+}
+
+#div_testimonials {
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
